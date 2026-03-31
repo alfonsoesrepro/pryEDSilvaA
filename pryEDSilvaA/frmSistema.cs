@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace pryEDSilvaA
 {
-    public partial class frmMain : Form
+    public partial class frmSistema : Form
     {
-        public frmMain()
+        public frmSistema()
         {
             InitializeComponent();
         }
@@ -25,6 +25,24 @@ namespace pryEDSilvaA
         private void acercaDeToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmDatosDesarrollador x = new frmDatosDesarrollador();
+            x.ShowDialog();
+        }
+
+        private void coloresToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            frmColores x = new frmColores();
+            x.ShowDialog();
+        }
+
+        private void mesesToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            frmColores x = new frmColores();
+            x.ShowDialog();
+        }
+
+        private void clientesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmClientes x = new frmClientes();
             x.ShowDialog();
         }
     }
