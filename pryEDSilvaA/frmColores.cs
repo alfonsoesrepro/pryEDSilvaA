@@ -16,5 +16,14 @@ namespace pryEDSilvaA
         {
             InitializeComponent();
         }
+
+        private void cmdGrabar_Click(object sender, EventArgs e)
+        {
+            clsArchivoTexto x = new clsArchivoTexto();
+            x.NombreArchivo = "Colores.txt";
+            x.Grabar(txtColores.Text);
+
+            MessageBox.Show("Color grabado correctamente");
+        }
     }
 }

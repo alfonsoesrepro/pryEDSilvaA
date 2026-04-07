@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.lblNombre = new System.Windows.Forms.Label();
-            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.txtColores = new System.Windows.Forms.TextBox();
             this.cmdListar = new System.Windows.Forms.Button();
             this.cmdGrabar = new System.Windows.Forms.Button();
             this.lstColores = new System.Windows.Forms.ListBox();
@@ -44,13 +44,13 @@
             this.lblNombre.TabIndex = 0;
             this.lblNombre.Text = "Nombre:";
             // 
-            // txtNombre
+            // txtColores
             // 
-            this.txtNombre.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtNombre.Location = new System.Drawing.Point(177, 60);
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(175, 20);
-            this.txtNombre.TabIndex = 1;
+            this.txtColores.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtColores.Location = new System.Drawing.Point(177, 60);
+            this.txtColores.Name = "txtColores";
+            this.txtColores.Size = new System.Drawing.Size(175, 20);
+            this.txtColores.TabIndex = 1;
             // 
             // cmdListar
             // 
@@ -69,6 +69,7 @@
             this.cmdGrabar.TabIndex = 3;
             this.cmdGrabar.Text = "Grabar";
             this.cmdGrabar.UseVisualStyleBackColor = true;
+            this.cmdGrabar.Click += new System.EventHandler(this.cmdGrabar_Click);
             // 
             // lstColores
             // 
@@ -86,7 +87,7 @@
             this.Controls.Add(this.lstColores);
             this.Controls.Add(this.cmdGrabar);
             this.Controls.Add(this.cmdListar);
-            this.Controls.Add(this.txtNombre);
+            this.Controls.Add(this.txtColores);
             this.Controls.Add(this.lblNombre);
             this.Name = "frmColores";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -99,7 +100,7 @@
         #endregion
 
         private System.Windows.Forms.Label lblNombre;
-        private System.Windows.Forms.TextBox txtNombre;
+        private System.Windows.Forms.TextBox txtColores;
         private System.Windows.Forms.Button cmdListar;
         private System.Windows.Forms.Button cmdGrabar;
         private System.Windows.Forms.ListBox lstColores;
