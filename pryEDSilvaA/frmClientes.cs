@@ -34,5 +34,7 @@ namespace pryEDSilvaA
             x.NombreArchivo = "Clientes.csv";
             if (File.Exists(x.NombreArchivo)) x.Recorrer(dgvClientes);        
         }
+
+        //AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
     }
 }
