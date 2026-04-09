@@ -92,6 +92,7 @@
             this.Name = "frmColores";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Colores";
+
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace pryEDSilvaA
 {
-    public partial class frmMeses : Form
+    public partial class frmCarreras : Form
     {
-        public frmMeses()
+        public frmCarreras()
         {
             InitializeComponent();
         }
@@ -20,11 +20,11 @@ namespace pryEDSilvaA
         private void cmdGrabar_Click(object sender, EventArgs e)
         {
             clsArchivoTexto x = new clsArchivoTexto();
-            x.NombreArchivo = "Meses.txt";
-            x.Grabar(txtMeses.Text);
-            x.Recorrer(lstMeses);
+            x.NombreArchivo = "Carreras.csv";
+            x.Grabar(txtCarreras.Text);
+            x.Recorrer(lstCarreras);
 
-            MessageBox.Show("Mes grabado correctamente");
+            MessageBox.Show("Carrera grabada correctamente");
         }
     }
 }

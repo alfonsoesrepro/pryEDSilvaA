@@ -22,7 +22,8 @@ namespace pryEDSilvaA
             clsArchivoTexto x = new clsArchivoTexto();
             x.NombreArchivo = "Colores.txt";
             x.Grabar(txtColores.Text);
-
+            x.Recorrer(lstColores);
+            
             MessageBox.Show("Color grabado correctamente");
         }
     }

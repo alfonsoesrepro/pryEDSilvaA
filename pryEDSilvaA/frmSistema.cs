@@ -45,5 +45,10 @@ namespace pryEDSilvaA
             frmClientes x = new frmClientes();
             x.ShowDialog();
         }
+
+        private void frmSistema_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

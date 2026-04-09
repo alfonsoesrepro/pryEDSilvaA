@@ -32,7 +32,7 @@
             this.lblNombre = new System.Windows.Forms.Label();
             this.lblDeuda = new System.Windows.Forms.Label();
             this.txtCodigo = new System.Windows.Forms.TextBox();
-            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.txtClientes = new System.Windows.Forms.TextBox();
             this.txtDeuda = new System.Windows.Forms.TextBox();
             this.cmdGrabar = new System.Windows.Forms.Button();
             this.dgvClientes = new System.Windows.Forms.DataGridView();
@@ -77,13 +77,13 @@
             this.txtCodigo.Size = new System.Drawing.Size(100, 20);
             this.txtCodigo.TabIndex = 3;
             // 
-            // txtNombre
+            // txtClientes
             // 
-            this.txtNombre.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtNombre.Location = new System.Drawing.Point(170, 101);
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(412, 20);
-            this.txtNombre.TabIndex = 4;
+            this.txtClientes.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtClientes.Location = new System.Drawing.Point(170, 101);
+            this.txtClientes.Name = "txtClientes";
+            this.txtClientes.Size = new System.Drawing.Size(412, 20);
+            this.txtClientes.TabIndex = 4;
             // 
             // txtDeuda
             // 
@@ -101,6 +101,7 @@
             this.cmdGrabar.TabIndex = 6;
             this.cmdGrabar.Text = "Grabar";
             this.cmdGrabar.UseVisualStyleBackColor = true;
+            this.cmdGrabar.Click += new System.EventHandler(this.cmdGrabar_Click);
             // 
             // dgvClientes
             // 
@@ -110,7 +111,7 @@
             this.clmCodigo,
             this.clmNombre,
             this.clmDeuda});
-            this.dgvClientes.Location = new System.Drawing.Point(36, 305);
+            this.dgvClientes.Location = new System.Drawing.Point(24, 305);
             this.dgvClientes.Name = "dgvClientes";
             this.dgvClientes.RowHeadersVisible = false;
             this.dgvClientes.Size = new System.Drawing.Size(546, 210);
@@ -121,18 +122,21 @@
             this.clmCodigo.HeaderText = "Código";
             this.clmCodigo.Name = "clmCodigo";
             this.clmCodigo.ReadOnly = true;
+            this.clmCodigo.Width = 182;
             // 
             // clmNombre
             // 
             this.clmNombre.HeaderText = "Nombre";
             this.clmNombre.Name = "clmNombre";
             this.clmNombre.ReadOnly = true;
+            this.clmNombre.Width = 182;
             // 
             // clmDeuda
             // 
             this.clmDeuda.HeaderText = "Deuda";
             this.clmDeuda.Name = "clmDeuda";
             this.clmDeuda.ReadOnly = true;
+            this.clmDeuda.Width = 182;
             // 
             // frmClientes
             // 
@@ -142,7 +146,7 @@
             this.Controls.Add(this.dgvClientes);
             this.Controls.Add(this.cmdGrabar);
             this.Controls.Add(this.txtDeuda);
-            this.Controls.Add(this.txtNombre);
+            this.Controls.Add(this.txtClientes);
             this.Controls.Add(this.txtCodigo);
             this.Controls.Add(this.lblDeuda);
             this.Controls.Add(this.lblNombre);
@@ -163,7 +167,7 @@
         private System.Windows.Forms.Label lblNombre;
         private System.Windows.Forms.Label lblDeuda;
         private System.Windows.Forms.TextBox txtCodigo;
-        private System.Windows.Forms.TextBox txtNombre;
+        private System.Windows.Forms.TextBox txtClientes;
         private System.Windows.Forms.TextBox txtDeuda;
         private System.Windows.Forms.Button cmdGrabar;
         private System.Windows.Forms.DataGridView dgvClientes;
