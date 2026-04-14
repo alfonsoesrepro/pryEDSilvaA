@@ -45,7 +45,7 @@
             // lblCodigo
             // 
             this.lblCodigo.AutoSize = true;
-            this.lblCodigo.Location = new System.Drawing.Point(33, 61);
+            this.lblCodigo.Location = new System.Drawing.Point(29, 60);
             this.lblCodigo.Name = "lblCodigo";
             this.lblCodigo.Size = new System.Drawing.Size(43, 13);
             this.lblCodigo.TabIndex = 0;
@@ -54,7 +54,7 @@
             // lblNombre
             // 
             this.lblNombre.AutoSize = true;
-            this.lblNombre.Location = new System.Drawing.Point(33, 108);
+            this.lblNombre.Location = new System.Drawing.Point(29, 107);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(47, 13);
             this.lblNombre.TabIndex = 1;
@@ -63,7 +63,7 @@
             // lblDeuda
             // 
             this.lblDeuda.AutoSize = true;
-            this.lblDeuda.Location = new System.Drawing.Point(33, 148);
+            this.lblDeuda.Location = new System.Drawing.Point(29, 147);
             this.lblDeuda.Name = "lblDeuda";
             this.lblDeuda.Size = new System.Drawing.Size(42, 13);
             this.lblDeuda.TabIndex = 2;
@@ -72,7 +72,7 @@
             // txtCodigo
             // 
             this.txtCodigo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtCodigo.Location = new System.Drawing.Point(482, 59);
+            this.txtCodigo.Location = new System.Drawing.Point(478, 58);
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.Size = new System.Drawing.Size(100, 20);
             this.txtCodigo.TabIndex = 3;
@@ -80,7 +80,7 @@
             // txtClientes
             // 
             this.txtClientes.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtClientes.Location = new System.Drawing.Point(170, 101);
+            this.txtClientes.Location = new System.Drawing.Point(166, 100);
             this.txtClientes.Name = "txtClientes";
             this.txtClientes.Size = new System.Drawing.Size(412, 20);
             this.txtClientes.TabIndex = 4;
@@ -88,14 +88,14 @@
             // txtDeuda
             // 
             this.txtDeuda.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtDeuda.Location = new System.Drawing.Point(482, 141);
+            this.txtDeuda.Location = new System.Drawing.Point(478, 140);
             this.txtDeuda.Name = "txtDeuda";
             this.txtDeuda.Size = new System.Drawing.Size(100, 20);
             this.txtDeuda.TabIndex = 5;
             // 
             // cmdGrabar
             // 
-            this.cmdGrabar.Location = new System.Drawing.Point(482, 218);
+            this.cmdGrabar.Location = new System.Drawing.Point(478, 217);
             this.cmdGrabar.Name = "cmdGrabar";
             this.cmdGrabar.Size = new System.Drawing.Size(100, 23);
             this.cmdGrabar.TabIndex = 6;
@@ -111,7 +111,7 @@
             this.clmCodigo,
             this.clmNombre,
             this.clmDeuda});
-            this.dgvClientes.Location = new System.Drawing.Point(24, 305);
+            this.dgvClientes.Location = new System.Drawing.Point(20, 304);
             this.dgvClientes.Name = "dgvClientes";
             this.dgvClientes.RowHeadersVisible = false;
             this.dgvClientes.Size = new System.Drawing.Size(546, 210);

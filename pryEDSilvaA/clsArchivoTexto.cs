@@ -10,7 +10,7 @@ namespace pryEDSilvaA
 {
     internal class clsArchivoTexto
     {
-        public String NombreArchivo = "Colores.txt";
+        public String NombreArchivo;
 
         public void Grabar()
         { 

@@ -63,6 +63,16 @@ namespace pryEDSilvaA.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap b10 {
+            get {
+                object obj = ResourceManager.GetObject("b10", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap digital_digital_art_artwork_fantasy_art_drawing_hd_wallpaper_thumb {
             get {
                 object obj = ResourceManager.GetObject("digital-digital-art-artwork-fantasy-art-drawing-hd-wallpaper-thumb", resourceCulture);

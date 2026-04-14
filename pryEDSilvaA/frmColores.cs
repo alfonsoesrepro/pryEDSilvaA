@@ -26,5 +26,10 @@ namespace pryEDSilvaA
             
             MessageBox.Show("Color grabado correctamente");
         }
+
+        private void frmColores_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

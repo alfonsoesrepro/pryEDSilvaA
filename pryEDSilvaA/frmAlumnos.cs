@@ -11,9 +11,9 @@ using System.IO;
 
 namespace pryEDSilvaA
 {
-    public partial class frmClientes : Form
+    public partial class frmAlumnos : Form
     {
-        public frmClientes()
+        public frmAlumnos()
         {
             InitializeComponent();
         }
@@ -21,20 +21,18 @@ namespace pryEDSilvaA
         private void cmdGrabar_Click(object sender, EventArgs e)
         {
             clsArchivoTexto x = new clsArchivoTexto();
-            x.NombreArchivo = "Clientes.csv";
-            x.Grabar(txtCodigo.Text, txtClientes.Text, txtDeuda.Text);
-            x.Recorrer(dgvClientes);
+            x.NombreArchivo = "Carreras.csv";
+            x.Grabar(txtCodigo.Text, txtClientes.Text, txtCarrera.Text);
+            x.Recorrer(dgvAlumnos);
 
-            MessageBox.Show("Cliente grabado correctamente");
+            MessageBox.Show("Alumno grabado correctamente");
         }
 
-        private void frmClientes_Load(object sender, EventArgs e)
+        private void frmAlumnos_Load(object sender, EventArgs e)
         {
             clsArchivoTexto x = new clsArchivoTexto();
-            x.NombreArchivo = "Clientes.csv";
-            if (File.Exists(x.NombreArchivo)) x.Recorrer(dgvClientes);        
+            x.NombreArchivo = "Carreras.csv";
+            if (File.Exists(x.NombreArchivo)) x.Recorrer(dgvAlumnos);
         }
-
-        //AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
     }
 }
