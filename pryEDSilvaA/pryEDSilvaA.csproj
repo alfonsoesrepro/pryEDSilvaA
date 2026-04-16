@@ -50,6 +50,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="clsArchivoTexto.cs" />
+    <Compile Include="clsCola.cs" />
+    <Compile Include="clsNodo.cs" />
     <Compile Include="frmAlumnos.cs">
       <SubType>Form</SubType>
     </Compile>
