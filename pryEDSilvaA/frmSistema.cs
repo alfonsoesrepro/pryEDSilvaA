@@ -68,5 +68,11 @@ namespace pryEDSilvaA
             frmCola x = new frmCola();
             x.ShowDialog();
         }
+
+        private void pilaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmPila x = new frmPila();
+            x.ShowDialog();
+        }
     }
 }

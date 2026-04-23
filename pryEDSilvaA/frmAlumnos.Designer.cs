@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             this.dgvAlumnos = new System.Windows.Forms.DataGridView();
+            this.clmCodigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clmNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clmCarrera = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cmdGrabar = new System.Windows.Forms.Button();
             this.txtCarrera = new System.Windows.Forms.TextBox();
             this.txtClientes = new System.Windows.Forms.TextBox();
@@ -36,9 +39,6 @@
             this.lblCarrera = new System.Windows.Forms.Label();
             this.lblNombre = new System.Windows.Forms.Label();
             this.lblCodigo = new System.Windows.Forms.Label();
-            this.clmCodigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clmNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clmCarrera = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAlumnos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -55,6 +55,27 @@
             this.dgvAlumnos.RowHeadersVisible = false;
             this.dgvAlumnos.Size = new System.Drawing.Size(546, 210);
             this.dgvAlumnos.TabIndex = 15;
+            // 
+            // clmCodigo
+            // 
+            this.clmCodigo.HeaderText = "Código";
+            this.clmCodigo.Name = "clmCodigo";
+            this.clmCodigo.ReadOnly = true;
+            this.clmCodigo.Width = 182;
+            // 
+            // clmNombre
+            // 
+            this.clmNombre.HeaderText = "Nombre";
+            this.clmNombre.Name = "clmNombre";
+            this.clmNombre.ReadOnly = true;
+            this.clmNombre.Width = 182;
+            // 
+            // clmCarrera
+            // 
+            this.clmCarrera.HeaderText = "Carrera";
+            this.clmCarrera.Name = "clmCarrera";
+            this.clmCarrera.ReadOnly = true;
+            this.clmCarrera.Width = 182;
             // 
             // cmdGrabar
             // 
@@ -117,27 +138,6 @@
             this.lblCodigo.TabIndex = 8;
             this.lblCodigo.Text = "Código:";
             // 
-            // clmCodigo
-            // 
-            this.clmCodigo.HeaderText = "Código";
-            this.clmCodigo.Name = "clmCodigo";
-            this.clmCodigo.ReadOnly = true;
-            this.clmCodigo.Width = 182;
-            // 
-            // clmNombre
-            // 
-            this.clmNombre.HeaderText = "Nombre";
-            this.clmNombre.Name = "clmNombre";
-            this.clmNombre.ReadOnly = true;
-            this.clmNombre.Width = 182;
-            // 
-            // clmCarrera
-            // 
-            this.clmCarrera.HeaderText = "Carrera";
-            this.clmCarrera.Name = "clmCarrera";
-            this.clmCarrera.ReadOnly = true;
-            this.clmCarrera.Width = 182;
-            // 
             // frmAlumnos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -152,6 +152,7 @@
             this.Controls.Add(this.lblNombre);
             this.Controls.Add(this.lblCodigo);
             this.Name = "frmAlumnos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Alumnos";
             this.Load += new System.EventHandler(this.frmAlumnos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvAlumnos)).EndInit();

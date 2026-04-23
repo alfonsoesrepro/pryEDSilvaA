@@ -315,6 +315,7 @@
             this.Controls.Add(this.gbNB);
             this.Controls.Add(this.pbCola);
             this.Name = "frmCola";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Estructura Dinámica Lineal - Cola";
             this.gbNB.ResumeLayout(false);
             this.gbNB.PerformLayout();
