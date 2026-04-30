@@ -13,12 +13,14 @@ namespace pryEDSilvaA
         private String nom;
         private String tra;
         private clsNodo sig;
+        private clsNodo ant;
 
         //Propiedades
         public Int32 Codigo { get => cod; set => cod = value; }
         public String Nombre { get => nom; set => nom = value; }
         public String Tramite { get => tra; set => tra = value; }
         public clsNodo Siguiente { get => sig; set => sig = value; }
+        public clsNodo Anterior { get => ant; set => ant = value; }
 
         /*
         public Int32 Codigo

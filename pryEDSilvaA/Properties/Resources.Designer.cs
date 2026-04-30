@@ -99,5 +99,15 @@ namespace pryEDSilvaA.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap listadoblementeencadenada_portada {
+            get {
+                object obj = ResourceManager.GetObject("listadoblementeencadenada-portada", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

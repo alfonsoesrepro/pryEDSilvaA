@@ -75,6 +75,7 @@
             // 
             // dgvListaSimple
             // 
+            this.dgvListaSimple.AllowUserToAddRows = false;
             this.dgvListaSimple.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvListaSimple.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.clmCodigo,
@@ -82,6 +83,7 @@
             this.clmTramite});
             this.dgvListaSimple.Location = new System.Drawing.Point(203, 19);
             this.dgvListaSimple.Name = "dgvListaSimple";
+            this.dgvListaSimple.ReadOnly = true;
             this.dgvListaSimple.RowHeadersVisible = false;
             this.dgvListaSimple.Size = new System.Drawing.Size(411, 186);
             this.dgvListaSimple.TabIndex = 5;
@@ -90,18 +92,21 @@
             // 
             this.clmCodigo.HeaderText = "Código";
             this.clmCodigo.Name = "clmCodigo";
+            this.clmCodigo.ReadOnly = true;
             this.clmCodigo.Width = 137;
             // 
             // clmNombre
             // 
             this.clmNombre.HeaderText = "Nombre";
             this.clmNombre.Name = "clmNombre";
+            this.clmNombre.ReadOnly = true;
             this.clmNombre.Width = 137;
             // 
             // clmTramite
             // 
             this.clmTramite.HeaderText = "Trámite";
             this.clmTramite.Name = "clmTramite";
+            this.clmTramite.ReadOnly = true;
             this.clmTramite.Width = 137;
             // 
             // gbEE
