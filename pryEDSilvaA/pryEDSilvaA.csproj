@@ -184,6 +184,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="images.ico" />
+    <None Include="Resources\61tOwAlN1iL._AC_SL1497_.jpg" />
     <None Include="Resources\listadoblementeencadenada-portada.png" />
     <None Include="Resources\images.png" />
     <None Include="Resources\images.jpg" />

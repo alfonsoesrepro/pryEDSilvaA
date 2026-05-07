@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMeses));
             this.lstMeses = new System.Windows.Forms.ListBox();
             this.cmdGrabar = new System.Windows.Forms.Button();
             this.cmdListar = new System.Windows.Forms.Button();
@@ -61,6 +62,7 @@
             this.cmdListar.TabIndex = 7;
             this.cmdListar.Text = "Listar";
             this.cmdListar.UseVisualStyleBackColor = true;
+            this.cmdListar.Click += new System.EventHandler(this.cmdListar_Click);
             // 
             // txtMeses
             // 
@@ -69,6 +71,7 @@
             this.txtMeses.Name = "txtMeses";
             this.txtMeses.Size = new System.Drawing.Size(175, 20);
             this.txtMeses.TabIndex = 6;
+            this.txtMeses.TextChanged += new System.EventHandler(this.txtMeses_TextChanged);
             // 
             // lblNombre
             // 
@@ -89,9 +92,11 @@
             this.Controls.Add(this.cmdListar);
             this.Controls.Add(this.txtMeses);
             this.Controls.Add(this.lblNombre);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmMeses";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Meses";
+            this.Load += new System.EventHandler(this.frmMeses_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

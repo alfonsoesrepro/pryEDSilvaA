@@ -23,8 +23,40 @@ namespace pryEDSilvaA
             x.NombreArchivo = "Meses.txt";
             x.Grabar(txtMeses.Text);
             x.Recorrer(lstMeses);
+            txtMeses.Clear();
+            txtMeses.Focus();
 
-            MessageBox.Show("Mes grabado correctamente");
+            MessageBox.Show("Mes grabado correctamente", "Aviso", 
+                MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        public void validarDatos()
+        {
+            if (txtMeses.Text == "")
+            {
+                cmdGrabar.Enabled = false;
+            }
+            else 
+            {
+                cmdGrabar.Enabled = true;
+            }
+        }
+
+        private void txtMeses_TextChanged(object sender, EventArgs e)
+        {
+            validarDatos();
+        }
+
+        private void frmMeses_Load(object sender, EventArgs e)
+        {
+            cmdGrabar.Enabled = false;
+        }
+
+        private void cmdListar_Click(object sender, EventArgs e)
+        {
+            clsArchivoTexto x = new clsArchivoTexto();
+            x.NombreArchivo = "Meses.txt";
+            x.Recorrer(lstMeses);
         }
     }
 }

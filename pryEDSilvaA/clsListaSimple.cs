@@ -109,7 +109,7 @@ namespace pryEDSilvaA
         {
 
             clsNodo Aux = Primero;
-            StreamWriter AD = new StreamWriter("Pila.csv", false, Encoding.UTF8);
+            StreamWriter AD = new StreamWriter("ListaSimple.csv", false, Encoding.UTF8);
             AD.WriteLine("Lista de espera\n");
             AD.WriteLine("Codigo;Nombre;Tramite");
             while (Aux != null)

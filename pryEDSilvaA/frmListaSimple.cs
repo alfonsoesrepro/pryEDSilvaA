@@ -51,7 +51,6 @@ namespace pryEDSilvaA
             {
                 cmbCodigo.Items.Clear();
             }
-
         }
 
         private void validarDatos()
