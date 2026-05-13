@@ -45,9 +45,10 @@ namespace pryEDSilvaA
                             break;
                         }
 
-                        nuevo.Siguiente = aux;
-                        ant.Siguiente = nuevo;
+                        
                     }
+                    nuevo.Siguiente = aux;
+                    ant.Siguiente = nuevo;
                 }
             }
         }

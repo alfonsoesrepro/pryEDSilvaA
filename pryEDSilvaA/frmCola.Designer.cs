@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCola));
             this.gbNB = new System.Windows.Forms.GroupBox();
             this.cmdAgregar = new System.Windows.Forms.Button();
             this.txtTramite = new System.Windows.Forms.TextBox();
@@ -266,6 +267,7 @@
             // 
             // dgvCola
             // 
+            this.dgvCola.AllowUserToAddRows = false;
             this.dgvCola.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvCola.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.clmCodigo,
@@ -273,6 +275,7 @@
             this.clmTramite});
             this.dgvCola.Location = new System.Drawing.Point(203, 19);
             this.dgvCola.Name = "dgvCola";
+            this.dgvCola.ReadOnly = true;
             this.dgvCola.RowHeadersVisible = false;
             this.dgvCola.Size = new System.Drawing.Size(411, 186);
             this.dgvCola.TabIndex = 5;
@@ -281,18 +284,21 @@
             // 
             this.clmCodigo.HeaderText = "Código";
             this.clmCodigo.Name = "clmCodigo";
+            this.clmCodigo.ReadOnly = true;
             this.clmCodigo.Width = 137;
             // 
             // clmNombre
             // 
             this.clmNombre.HeaderText = "Nombre";
             this.clmNombre.Name = "clmNombre";
+            this.clmNombre.ReadOnly = true;
             this.clmNombre.Width = 137;
             // 
             // clmTramite
             // 
             this.clmTramite.HeaderText = "Trámite";
             this.clmTramite.Name = "clmTramite";
+            this.clmTramite.ReadOnly = true;
             this.clmTramite.Width = 137;
             // 
             // pbCola
@@ -314,6 +320,7 @@
             this.Controls.Add(this.gbEE);
             this.Controls.Add(this.gbNB);
             this.Controls.Add(this.pbCola);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmCola";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Estructura Dinámica Lineal - Cola";

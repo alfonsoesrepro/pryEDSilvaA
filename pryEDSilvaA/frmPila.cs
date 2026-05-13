@@ -21,19 +21,30 @@ namespace pryEDSilvaA
 
         private void cmdAgregar_Click(object sender, EventArgs e)
         {
-            clsNodo nuevo = new clsNodo();
+            if (!String.IsNullOrWhiteSpace(txtCodigo.Text) &&
+                !String.IsNullOrWhiteSpace(txtNombre.Text) &&
+                !String.IsNullOrWhiteSpace(txtTramite.Text))
+            {
+                clsNodo nuevo = new clsNodo();
 
-            nuevo.Nombre = txtNombre.Text;
-            nuevo.Codigo = Convert.ToInt32(txtCodigo.Text);
-            nuevo.Tramite = txtTramite.Text;
+                nuevo.Nombre = txtNombre.Text;
+                nuevo.Codigo = Convert.ToInt32(txtCodigo.Text);
+                nuevo.Tramite = txtTramite.Text;
 
-            pila.Agregar(nuevo);
-            pila.Recorrer(dgvPila);
-            pila.Recorrer(lbPila);
+                pila.Agregar(nuevo);
+                pila.Recorrer(dgvPila);
+                pila.Recorrer(lbPila);
 
-            txtCodigo.Clear();
-            txtNombre.Clear();
-            txtTramite.Clear();
+                txtCodigo.Clear();
+                txtNombre.Clear();
+                txtTramite.Clear();
+                txtCodigo.Focus();
+            }
+            else
+            {
+                MessageBox.Show("Debe completar todos los campos");
+                txtCodigo.Focus();
+            }
         }
 
         private void cmdEliminar_Click(object sender, EventArgs e)

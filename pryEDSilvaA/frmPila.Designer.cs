@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPila));
             this.gbListado = new System.Windows.Forms.GroupBox();
             this.lbPila = new System.Windows.Forms.ListBox();
             this.dgvPila = new System.Windows.Forms.DataGridView();
@@ -82,6 +83,7 @@
             // 
             // dgvPila
             // 
+            this.dgvPila.AllowUserToAddRows = false;
             this.dgvPila.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvPila.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.clmCodigo,
@@ -89,6 +91,7 @@
             this.clmTramite});
             this.dgvPila.Location = new System.Drawing.Point(203, 19);
             this.dgvPila.Name = "dgvPila";
+            this.dgvPila.ReadOnly = true;
             this.dgvPila.RowHeadersVisible = false;
             this.dgvPila.Size = new System.Drawing.Size(411, 186);
             this.dgvPila.TabIndex = 5;
@@ -97,18 +100,21 @@
             // 
             this.clmCodigo.HeaderText = "Código";
             this.clmCodigo.Name = "clmCodigo";
+            this.clmCodigo.ReadOnly = true;
             this.clmCodigo.Width = 137;
             // 
             // clmNombre
             // 
             this.clmNombre.HeaderText = "Nombre";
             this.clmNombre.Name = "clmNombre";
+            this.clmNombre.ReadOnly = true;
             this.clmNombre.Width = 137;
             // 
             // clmTramite
             // 
             this.clmTramite.HeaderText = "Trámite";
             this.clmTramite.Name = "clmTramite";
+            this.clmTramite.ReadOnly = true;
             this.clmTramite.Width = 137;
             // 
             // gbEE
@@ -314,6 +320,7 @@
             this.Controls.Add(this.gbEE);
             this.Controls.Add(this.gbNB);
             this.Controls.Add(this.pbPila);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmPila";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Estructura Dinámica Lineal - Pila";

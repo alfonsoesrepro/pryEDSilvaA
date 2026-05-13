@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmListaSimple));
             this.gbListado = new System.Windows.Forms.GroupBox();
             this.lbListaSimple = new System.Windows.Forms.ListBox();
             this.dgvListaSimple = new System.Windows.Forms.DataGridView();
@@ -248,6 +249,7 @@
             this.Controls.Add(this.gbEE);
             this.Controls.Add(this.gbNB);
             this.Controls.Add(this.pbListaSimple);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmListaSimple";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Estructura Dinámica Lineal - Lista Simple";

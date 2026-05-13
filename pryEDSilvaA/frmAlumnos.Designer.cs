@@ -28,13 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAlumnos));
             this.dgvAlumnos = new System.Windows.Forms.DataGridView();
             this.clmCodigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clmNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clmCarrera = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cmdGrabar = new System.Windows.Forms.Button();
             this.txtCarrera = new System.Windows.Forms.TextBox();
-            this.txtClientes = new System.Windows.Forms.TextBox();
+            this.txtAlumnos = new System.Windows.Forms.TextBox();
             this.txtCodigo = new System.Windows.Forms.TextBox();
             this.lblCarrera = new System.Windows.Forms.Label();
             this.lblNombre = new System.Windows.Forms.Label();
@@ -44,6 +45,7 @@
             // 
             // dgvAlumnos
             // 
+            this.dgvAlumnos.AllowUserToAddRows = false;
             this.dgvAlumnos.AllowUserToDeleteRows = false;
             this.dgvAlumnos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvAlumnos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -95,13 +97,13 @@
             this.txtCarrera.Size = new System.Drawing.Size(100, 20);
             this.txtCarrera.TabIndex = 13;
             // 
-            // txtClientes
+            // txtAlumnos
             // 
-            this.txtClientes.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtClientes.Location = new System.Drawing.Point(165, 98);
-            this.txtClientes.Name = "txtClientes";
-            this.txtClientes.Size = new System.Drawing.Size(412, 20);
-            this.txtClientes.TabIndex = 12;
+            this.txtAlumnos.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtAlumnos.Location = new System.Drawing.Point(165, 98);
+            this.txtAlumnos.Name = "txtAlumnos";
+            this.txtAlumnos.Size = new System.Drawing.Size(412, 20);
+            this.txtAlumnos.TabIndex = 12;
             // 
             // txtCodigo
             // 
@@ -146,11 +148,12 @@
             this.Controls.Add(this.dgvAlumnos);
             this.Controls.Add(this.cmdGrabar);
             this.Controls.Add(this.txtCarrera);
-            this.Controls.Add(this.txtClientes);
+            this.Controls.Add(this.txtAlumnos);
             this.Controls.Add(this.txtCodigo);
             this.Controls.Add(this.lblCarrera);
             this.Controls.Add(this.lblNombre);
             this.Controls.Add(this.lblCodigo);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmAlumnos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Alumnos";
@@ -166,7 +169,7 @@
         private System.Windows.Forms.DataGridView dgvAlumnos;
         private System.Windows.Forms.Button cmdGrabar;
         private System.Windows.Forms.TextBox txtCarrera;
-        private System.Windows.Forms.TextBox txtClientes;
+        private System.Windows.Forms.TextBox txtAlumnos;
         private System.Windows.Forms.TextBox txtCodigo;
         private System.Windows.Forms.Label lblCarrera;
         private System.Windows.Forms.Label lblNombre;

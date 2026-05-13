@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmColores));
             this.lblNombre = new System.Windows.Forms.Label();
             this.txtColores = new System.Windows.Forms.TextBox();
             this.cmdListar = new System.Windows.Forms.Button();
@@ -51,6 +52,7 @@
             this.txtColores.Name = "txtColores";
             this.txtColores.Size = new System.Drawing.Size(175, 20);
             this.txtColores.TabIndex = 1;
+            this.txtColores.TextChanged += new System.EventHandler(this.txtColores_TextChanged);
             // 
             // cmdListar
             // 
@@ -60,6 +62,7 @@
             this.cmdListar.TabIndex = 2;
             this.cmdListar.Text = "Listar";
             this.cmdListar.UseVisualStyleBackColor = true;
+            this.cmdListar.Click += new System.EventHandler(this.cmdListar_Click);
             // 
             // cmdGrabar
             // 
@@ -89,6 +92,7 @@
             this.Controls.Add(this.cmdListar);
             this.Controls.Add(this.txtColores);
             this.Controls.Add(this.lblNombre);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmColores";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Colores";

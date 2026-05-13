@@ -35,6 +35,7 @@ namespace pryEDSilvaA
             txtCodigo.Clear();
             txtNombre.Clear();
             txtTramite.Clear();
+            txtCodigo.Focus();
         }
 
         private void cmdEliminar_Click(object sender, EventArgs e)
@@ -46,10 +47,15 @@ namespace pryEDSilvaA
                 lista.Recorrer(dgvListaDoble);
                 lista.Recorrer(lbListaDoble);
                 lista.Recorrer();
+
+                cmbCodigo.Items.Remove(codigo);
+                cmbCodigo.Focus();
+                cmdEliminar.Enabled = false;
             }
             else
             {
                 cmbCodigo.Items.Clear();
+                txtCodigo.Focus();
             }
         }
 

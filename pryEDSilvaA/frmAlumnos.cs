@@ -20,18 +20,33 @@ namespace pryEDSilvaA
 
         private void cmdGrabar_Click(object sender, EventArgs e)
         {
-            clsArchivoTexto x = new clsArchivoTexto();
-            x.NombreArchivo = "Carreras.csv";
-            x.Grabar(txtCodigo.Text, txtClientes.Text, txtCarrera.Text);
-            x.Recorrer(dgvAlumnos);
+            if (!String.IsNullOrWhiteSpace(txtCodigo.Text) &&
+                !String.IsNullOrWhiteSpace(txtAlumnos.Text) &&
+                !String.IsNullOrWhiteSpace(txtCarrera.Text))
+            {
+                clsArchivoTexto x = new clsArchivoTexto();
+                x.NombreArchivo = "Alumnos.csv";
+                x.Grabar(txtCodigo.Text, txtAlumnos.Text, txtCarrera.Text);
+                x.Recorrer(dgvAlumnos);
 
-            MessageBox.Show("Alumno grabado correctamente");
+                txtCodigo.Clear();
+                txtAlumnos.Clear();
+                txtCarrera.Clear();
+                txtCodigo.Focus();
+
+                MessageBox.Show("Alumno/a grabado correctamente");
+            }
+            else
+            {
+                MessageBox.Show("Debe completar todos los campos");
+                txtCodigo.Focus();
+            }
         }
 
         private void frmAlumnos_Load(object sender, EventArgs e)
         {
             clsArchivoTexto x = new clsArchivoTexto();
-            x.NombreArchivo = "Carreras.csv";
+            x.NombreArchivo = "Alumnos.csv";
             if (File.Exists(x.NombreArchivo)) x.Recorrer(dgvAlumnos);
         }
     }

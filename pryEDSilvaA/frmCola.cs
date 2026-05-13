@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace pryEDSilvaA
 {
@@ -21,19 +22,30 @@ namespace pryEDSilvaA
 
         private void cmdAgregar_Click(object sender, EventArgs e)
         {
-            clsNodo nuevo = new clsNodo();
+            if (!String.IsNullOrWhiteSpace(txtCodigo.Text) &&
+                !String.IsNullOrWhiteSpace(txtNombre.Text) &&
+                !String.IsNullOrWhiteSpace(txtTramite.Text))
+            {
+                clsNodo nuevo = new clsNodo();
 
-            nuevo.Nombre = txtNombre.Text;
-            nuevo.Codigo = Convert.ToInt32(txtCodigo.Text);
-            nuevo.Tramite = txtTramite.Text;
+                nuevo.Nombre = txtNombre.Text;
+                nuevo.Codigo = Convert.ToInt32(txtCodigo.Text);
+                nuevo.Tramite = txtTramite.Text;
 
-            fila.Agregar(nuevo);
-            fila.Recorrer(dgvCola);
-            fila.Recorrer(lbCola);
-            
-            txtCodigo.Clear();
-            txtNombre.Clear();
-            txtTramite.Clear();
+                fila.Agregar(nuevo);
+                fila.Recorrer(dgvCola);
+                fila.Recorrer(lbCola);
+
+                txtCodigo.Clear();
+                txtNombre.Clear();
+                txtTramite.Clear();
+                txtCodigo.Focus();
+            }
+            else
+            {
+                MessageBox.Show("Debe completar todos los campos");
+                txtCodigo.Focus();
+            }
         }
 
         private void cmdEliminar_Click(object sender, EventArgs e)

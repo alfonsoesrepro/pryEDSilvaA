@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace pryEDSilvaA
 {
@@ -56,7 +57,15 @@ namespace pryEDSilvaA
         {
             clsArchivoTexto x = new clsArchivoTexto();
             x.NombreArchivo = "Meses.txt";
-            x.Recorrer(lstMeses);
+            
+            if (File.Exists(x.NombreArchivo))
+            {
+                x.Recorrer(lstMeses);
+            }
+            else
+            {
+                MessageBox.Show("No se han registrado meses aún");
+            }
         }
     }
 }

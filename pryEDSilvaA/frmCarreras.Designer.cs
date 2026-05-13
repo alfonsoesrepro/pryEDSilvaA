@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCarreras));
             this.lstCarreras = new System.Windows.Forms.ListBox();
             this.cmdGrabar = new System.Windows.Forms.Button();
             this.cmdListar = new System.Windows.Forms.Button();
@@ -61,6 +62,7 @@
             this.cmdListar.TabIndex = 12;
             this.cmdListar.Text = "Listar";
             this.cmdListar.UseVisualStyleBackColor = true;
+            this.cmdListar.Click += new System.EventHandler(this.cmdListar_Click);
             // 
             // txtCarreras
             // 
@@ -69,6 +71,7 @@
             this.txtCarreras.Name = "txtCarreras";
             this.txtCarreras.Size = new System.Drawing.Size(175, 20);
             this.txtCarreras.TabIndex = 11;
+            this.txtCarreras.TextChanged += new System.EventHandler(this.txtCarreras_TextChanged);
             // 
             // lblNombre
             // 
@@ -89,9 +92,11 @@
             this.Controls.Add(this.cmdListar);
             this.Controls.Add(this.txtCarreras);
             this.Controls.Add(this.lblNombre);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmCarreras";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Carreras";
+            this.Load += new System.EventHandler(this.frmCarreras_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
