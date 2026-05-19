@@ -86,5 +86,11 @@ namespace pryEDSilvaA
             frmListaDoble x = new frmListaDoble();
             x.ShowDialog();
         }
+
+        private void árbolToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmArbolBinario x = new frmArbolBinario();
+            x.ShowDialog();
+        }
     }
 }

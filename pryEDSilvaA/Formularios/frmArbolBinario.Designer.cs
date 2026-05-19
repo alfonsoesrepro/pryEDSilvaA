@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             this.gbListado = new System.Windows.Forms.GroupBox();
+            this.optPostOrden = new System.Windows.Forms.RadioButton();
+            this.optPreOrden = new System.Windows.Forms.RadioButton();
+            this.optInOrden = new System.Windows.Forms.RadioButton();
             this.dgvArbolBinario = new System.Windows.Forms.DataGridView();
             this.clmCodigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clmNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -48,9 +51,6 @@
             this.pbListaDoble = new System.Windows.Forms.PictureBox();
             this.twArbolBinario = new System.Windows.Forms.TreeView();
             this.cmdEquilibrar = new System.Windows.Forms.Button();
-            this.optInOrden = new System.Windows.Forms.RadioButton();
-            this.optPreOrden = new System.Windows.Forms.RadioButton();
-            this.optPostOrden = new System.Windows.Forms.RadioButton();
             this.gbListado.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvArbolBinario)).BeginInit();
             this.gbEE.SuspendLayout();
@@ -70,6 +70,39 @@
             this.gbListado.TabIndex = 20;
             this.gbListado.TabStop = false;
             this.gbListado.Text = "Listado del árbol";
+            // 
+            // optPostOrden
+            // 
+            this.optPostOrden.AutoSize = true;
+            this.optPostOrden.Location = new System.Drawing.Point(27, 138);
+            this.optPostOrden.Name = "optPostOrden";
+            this.optPostOrden.Size = new System.Drawing.Size(78, 17);
+            this.optPostOrden.TabIndex = 8;
+            this.optPostOrden.TabStop = true;
+            this.optPostOrden.Text = "Post-Orden";
+            this.optPostOrden.UseVisualStyleBackColor = true;
+            // 
+            // optPreOrden
+            // 
+            this.optPreOrden.AutoSize = true;
+            this.optPreOrden.Location = new System.Drawing.Point(27, 99);
+            this.optPreOrden.Name = "optPreOrden";
+            this.optPreOrden.Size = new System.Drawing.Size(73, 17);
+            this.optPreOrden.TabIndex = 7;
+            this.optPreOrden.TabStop = true;
+            this.optPreOrden.Text = "Pre-Orden";
+            this.optPreOrden.UseVisualStyleBackColor = true;
+            // 
+            // optInOrden
+            // 
+            this.optInOrden.AutoSize = true;
+            this.optInOrden.Location = new System.Drawing.Point(27, 60);
+            this.optInOrden.Name = "optInOrden";
+            this.optInOrden.Size = new System.Drawing.Size(66, 17);
+            this.optInOrden.TabIndex = 6;
+            this.optInOrden.TabStop = true;
+            this.optInOrden.Text = "In-Orden";
+            this.optInOrden.UseVisualStyleBackColor = true;
             // 
             // dgvArbolBinario
             // 
@@ -169,6 +202,7 @@
             this.cmdAgregar.TabIndex = 6;
             this.cmdAgregar.Text = "Agregar";
             this.cmdAgregar.UseVisualStyleBackColor = true;
+            this.cmdAgregar.Click += new System.EventHandler(this.cmdAgregar_Click);
             // 
             // txtTramite
             // 
@@ -246,39 +280,6 @@
             this.cmdEquilibrar.TabIndex = 21;
             this.cmdEquilibrar.Text = "Equilibrar";
             this.cmdEquilibrar.UseVisualStyleBackColor = true;
-            // 
-            // optInOrden
-            // 
-            this.optInOrden.AutoSize = true;
-            this.optInOrden.Location = new System.Drawing.Point(27, 48);
-            this.optInOrden.Name = "optInOrden";
-            this.optInOrden.Size = new System.Drawing.Size(66, 17);
-            this.optInOrden.TabIndex = 6;
-            this.optInOrden.TabStop = true;
-            this.optInOrden.Text = "In-Orden";
-            this.optInOrden.UseVisualStyleBackColor = true;
-            // 
-            // optPreOrden
-            // 
-            this.optPreOrden.AutoSize = true;
-            this.optPreOrden.Location = new System.Drawing.Point(27, 99);
-            this.optPreOrden.Name = "optPreOrden";
-            this.optPreOrden.Size = new System.Drawing.Size(73, 17);
-            this.optPreOrden.TabIndex = 7;
-            this.optPreOrden.TabStop = true;
-            this.optPreOrden.Text = "Pre-Orden";
-            this.optPreOrden.UseVisualStyleBackColor = true;
-            // 
-            // optPostOrden
-            // 
-            this.optPostOrden.AutoSize = true;
-            this.optPostOrden.Location = new System.Drawing.Point(27, 150);
-            this.optPostOrden.Name = "optPostOrden";
-            this.optPostOrden.Size = new System.Drawing.Size(78, 17);
-            this.optPostOrden.TabIndex = 8;
-            this.optPostOrden.TabStop = true;
-            this.optPostOrden.Text = "Post-Orden";
-            this.optPostOrden.UseVisualStyleBackColor = true;
             // 
             // frmArbolBinario
             // 

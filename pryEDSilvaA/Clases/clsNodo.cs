@@ -22,6 +22,10 @@ namespace pryEDSilvaA
         public clsNodo Siguiente { get => sig; set => sig = value; }
         public clsNodo Anterior { get => ant; set => ant = value; }
 
+        //Propiedades para el árbol
+        public clsNodo Izquierdo { get => ant; set => ant = value; }
+        public clsNodo Derecho { get => sig; set => sig = value; }
+
         /*
         public Int32 Codigo
         {
