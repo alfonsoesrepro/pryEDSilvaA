@@ -193,6 +193,7 @@
     <None Include="Resources\digital-digital-art-artwork-fantasy-art-drawing-hd-wallpaper-thumb.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\arbolbinario.png" />
     <Content Include="Resources\images.ico" />
     <None Include="Resources\61tOwAlN1iL._AC_SL1497_.jpg" />
     <None Include="Resources\listadoblementeencadenada-portada.png" />

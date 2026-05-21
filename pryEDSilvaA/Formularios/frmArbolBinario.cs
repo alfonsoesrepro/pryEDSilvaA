@@ -32,6 +32,7 @@ namespace pryEDSilvaA
 
             arbol.Agregar(nuevo);
             arbol.Recorrer(dgvArbolBinario);
+            arbol.Recorrer(twArbolBinario);
 
             txtCodigo.Clear();
             txtNombre.Clear();

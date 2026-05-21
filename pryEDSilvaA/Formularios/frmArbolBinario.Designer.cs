@@ -48,14 +48,14 @@
             this.lblTramite = new System.Windows.Forms.Label();
             this.lblNombre = new System.Windows.Forms.Label();
             this.lblCodigo = new System.Windows.Forms.Label();
-            this.pbListaDoble = new System.Windows.Forms.PictureBox();
+            this.pbArbolBinario = new System.Windows.Forms.PictureBox();
             this.twArbolBinario = new System.Windows.Forms.TreeView();
             this.cmdEquilibrar = new System.Windows.Forms.Button();
             this.gbListado.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvArbolBinario)).BeginInit();
             this.gbEE.SuspendLayout();
             this.gbNB.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbListaDoble)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbArbolBinario)).BeginInit();
             this.SuspendLayout();
             // 
             // gbListado
@@ -255,21 +255,21 @@
             this.lblCodigo.TabIndex = 0;
             this.lblCodigo.Text = "Código:";
             // 
-            // pbListaDoble
+            // pbArbolBinario
             // 
-            this.pbListaDoble.Image = global::pryEDSilvaA.Properties.Resources.listadoblementeencadenada_portada;
-            this.pbListaDoble.Location = new System.Drawing.Point(12, 12);
-            this.pbListaDoble.Name = "pbListaDoble";
-            this.pbListaDoble.Size = new System.Drawing.Size(187, 178);
-            this.pbListaDoble.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbListaDoble.TabIndex = 17;
-            this.pbListaDoble.TabStop = false;
+            this.pbArbolBinario.Image = global::pryEDSilvaA.Properties.Resources.arbolbinario;
+            this.pbArbolBinario.Location = new System.Drawing.Point(12, 12);
+            this.pbArbolBinario.Name = "pbArbolBinario";
+            this.pbArbolBinario.Size = new System.Drawing.Size(187, 178);
+            this.pbArbolBinario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbArbolBinario.TabIndex = 17;
+            this.pbArbolBinario.TabStop = false;
             // 
             // twArbolBinario
             // 
-            this.twArbolBinario.Location = new System.Drawing.Point(12, 12);
+            this.twArbolBinario.Location = new System.Drawing.Point(12, 444);
             this.twArbolBinario.Name = "twArbolBinario";
-            this.twArbolBinario.Size = new System.Drawing.Size(187, 178);
+            this.twArbolBinario.Size = new System.Drawing.Size(620, 296);
             this.twArbolBinario.TabIndex = 7;
             // 
             // cmdEquilibrar
@@ -285,13 +285,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(644, 450);
+            this.ClientSize = new System.Drawing.Size(644, 748);
             this.Controls.Add(this.cmdEquilibrar);
             this.Controls.Add(this.twArbolBinario);
             this.Controls.Add(this.gbListado);
             this.Controls.Add(this.gbEE);
             this.Controls.Add(this.gbNB);
-            this.Controls.Add(this.pbListaDoble);
+            this.Controls.Add(this.pbArbolBinario);
             this.Name = "frmArbolBinario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Estructura No Lineal - Árbol Binario";
@@ -302,7 +302,7 @@
             this.gbEE.PerformLayout();
             this.gbNB.ResumeLayout(false);
             this.gbNB.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbListaDoble)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbArbolBinario)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -325,7 +325,7 @@
         private System.Windows.Forms.Label lblTramite;
         private System.Windows.Forms.Label lblNombre;
         private System.Windows.Forms.Label lblCodigo;
-        private System.Windows.Forms.PictureBox pbListaDoble;
+        private System.Windows.Forms.PictureBox pbArbolBinario;
         private System.Windows.Forms.TreeView twArbolBinario;
         private System.Windows.Forms.Button cmdEquilibrar;
         private System.Windows.Forms.RadioButton optPostOrden;
