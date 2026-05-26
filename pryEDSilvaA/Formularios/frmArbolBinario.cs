@@ -31,7 +31,7 @@ namespace pryEDSilvaA
             nuevo.Tramite = txtTramite.Text;
 
             arbol.Agregar(nuevo);
-            arbol.Recorrer(dgvArbolBinario);
+            //arbol.Recorrer(dgvArbolBinario);
             arbol.Recorrer(twArbolBinario);
 
             txtCodigo.Clear();

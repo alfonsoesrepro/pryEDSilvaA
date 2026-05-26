@@ -1,4 +1,5 @@
-﻿using System;
+﻿using pryEDSilvaA.Formularios;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -90,6 +91,12 @@ namespace pryEDSilvaA
         private void árbolToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmArbolBinario x = new frmArbolBinario();
+            x.ShowDialog();
+        }
+
+        private void grafoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmGrafo x = new frmGrafo();
             x.ShowDialog();
         }
     }

@@ -48,9 +48,9 @@
             this.lblTramite = new System.Windows.Forms.Label();
             this.lblNombre = new System.Windows.Forms.Label();
             this.lblCodigo = new System.Windows.Forms.Label();
-            this.pbArbolBinario = new System.Windows.Forms.PictureBox();
             this.twArbolBinario = new System.Windows.Forms.TreeView();
             this.cmdEquilibrar = new System.Windows.Forms.Button();
+            this.pbArbolBinario = new System.Windows.Forms.PictureBox();
             this.gbListado.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvArbolBinario)).BeginInit();
             this.gbEE.SuspendLayout();
@@ -255,16 +255,6 @@
             this.lblCodigo.TabIndex = 0;
             this.lblCodigo.Text = "Código:";
             // 
-            // pbArbolBinario
-            // 
-            this.pbArbolBinario.Image = global::pryEDSilvaA.Properties.Resources.arbolbinario;
-            this.pbArbolBinario.Location = new System.Drawing.Point(12, 12);
-            this.pbArbolBinario.Name = "pbArbolBinario";
-            this.pbArbolBinario.Size = new System.Drawing.Size(187, 178);
-            this.pbArbolBinario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbArbolBinario.TabIndex = 17;
-            this.pbArbolBinario.TabStop = false;
-            // 
             // twArbolBinario
             // 
             this.twArbolBinario.Location = new System.Drawing.Point(12, 444);
@@ -280,6 +270,16 @@
             this.cmdEquilibrar.TabIndex = 21;
             this.cmdEquilibrar.Text = "Equilibrar";
             this.cmdEquilibrar.UseVisualStyleBackColor = true;
+            // 
+            // pbArbolBinario
+            // 
+            this.pbArbolBinario.Image = global::pryEDSilvaA.Properties.Resources.arbolbinario;
+            this.pbArbolBinario.Location = new System.Drawing.Point(12, 12);
+            this.pbArbolBinario.Name = "pbArbolBinario";
+            this.pbArbolBinario.Size = new System.Drawing.Size(187, 178);
+            this.pbArbolBinario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbArbolBinario.TabIndex = 17;
+            this.pbArbolBinario.TabStop = false;
             // 
             // frmArbolBinario
             // 

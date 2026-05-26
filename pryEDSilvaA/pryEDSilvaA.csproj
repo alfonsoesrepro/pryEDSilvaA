@@ -52,6 +52,7 @@
     <Compile Include="Clases\clsArbolBinario.cs" />
     <Compile Include="Clases\clsArchivoTexto.cs" />
     <Compile Include="Clases\clsCola.cs" />
+    <Compile Include="Clases\clsGrafo.cs" />
     <Compile Include="Clases\clsListaDoble.cs" />
     <Compile Include="Clases\clsListaSimple.cs" />
     <Compile Include="Clases\clsNodo.cs" />
@@ -97,6 +98,12 @@
     </Compile>
     <Compile Include="Formularios\frmDatosDesarrollador.Designer.cs">
       <DependentUpon>frmDatosDesarrollador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmGrafo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmGrafo.Designer.cs">
+      <DependentUpon>frmGrafo.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\frmListaDoble.cs">
       <SubType>Form</SubType>
@@ -151,6 +158,9 @@
     <EmbeddedResource Include="Formularios\frmDatosDesarrollador.resx">
       <DependentUpon>frmDatosDesarrollador.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmGrafo.resx">
+      <DependentUpon>frmGrafo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmListaDoble.resx">
       <DependentUpon>frmListaDoble.cs</DependentUpon>
     </EmbeddedResource>
@@ -194,6 +204,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\arbolbinario.png" />
+    <None Include="Resources\images %283%29.png" />
     <Content Include="Resources\images.ico" />
     <None Include="Resources\61tOwAlN1iL._AC_SL1497_.jpg" />
     <None Include="Resources\listadoblementeencadenada-portada.png" />
