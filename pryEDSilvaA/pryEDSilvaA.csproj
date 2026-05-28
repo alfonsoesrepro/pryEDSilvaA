@@ -49,6 +49,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BD\clsBaseDatos.cs" />
     <Compile Include="Clases\clsArbolBinario.cs" />
     <Compile Include="Clases\clsArchivoTexto.cs" />
     <Compile Include="Clases\clsCola.cs" />
@@ -205,6 +206,9 @@
   <ItemGroup>
     <None Include="Resources\arbolbinario.png" />
     <None Include="Resources\images %283%29.png" />
+    <Content Include="BD\Libreria.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Resources\images.ico" />
     <None Include="Resources\61tOwAlN1iL._AC_SL1497_.jpg" />
     <None Include="Resources\listadoblementeencadenada-portada.png" />
