@@ -15,7 +15,7 @@ namespace pryEDSilvaA.BD
         private OleDbCommand comando = new OleDbCommand();
         private OleDbDataAdapter adaptador = new OleDbDataAdapter();
 
-        private string CadenaConexion1 = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=BD/BD.mdb";
+        private string CadenaConexion1 = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=BD/Libreria.mdb";
         private string CadenaConexion2 = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=BD/BD.mdb";
 
         public void Listar(DataGridView dgv)
@@ -61,6 +61,33 @@ namespace pryEDSilvaA.BD
 
                 dgv.DataSource = null;
                 dgv.DataSource = DS.Tables[tabla];
+
+                conexion.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                conexion.Close();
+            }
+        }
+
+        public void Listar(DataGridView dgv, String varInstruccionSQL)
+        {
+            try
+            {
+                conexion.ConnectionString = CadenaConexion1;
+                conexion.Open();
+
+                comando.Connection = conexion;
+                comando.CommandType = CommandType.Text;
+                comando.CommandText = varInstruccionSQL;
+
+                DataSet DS = new DataSet();
+                adaptador = new OleDbDataAdapter(comando);
+                adaptador.Fill(DS, "Resultado");
+
+                dgv.DataSource = null;
+                dgv.DataSource = DS.Tables["Resultado"];
 
                 conexion.Close();
             }

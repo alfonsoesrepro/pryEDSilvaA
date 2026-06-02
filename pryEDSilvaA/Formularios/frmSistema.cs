@@ -99,5 +99,11 @@ namespace pryEDSilvaA
             frmGrafo x = new frmGrafo();
             x.ShowDialog();
         }
+
+        private void consultaDeUnaTablaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmConsultaTabla x = new frmConsultaTabla();
+            x.ShowDialog();
+        }
     }
 }
