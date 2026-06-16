@@ -94,6 +94,18 @@
     <Compile Include="Formularios\frmColores.Designer.cs">
       <DependentUpon>frmColores.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\frmConsultasConOperaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmConsultasConOperaciones.Designer.cs">
+      <DependentUpon>frmConsultasConOperaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmConsultaSQL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmConsultaSQL.Designer.cs">
+      <DependentUpon>frmConsultaSQL.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\frmConsultaTabla.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -130,6 +142,12 @@
     <Compile Include="Formularios\frmMeses.Designer.cs">
       <DependentUpon>frmMeses.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\frmOperaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmOperaciones.Designer.cs">
+      <DependentUpon>frmOperaciones.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\frmPila.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -162,6 +180,12 @@
     <EmbeddedResource Include="Formularios\frmColores.resx">
       <DependentUpon>frmColores.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmConsultasConOperaciones.resx">
+      <DependentUpon>frmConsultasConOperaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmConsultaSQL.resx">
+      <DependentUpon>frmConsultaSQL.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmConsultaTabla.resx">
       <DependentUpon>frmConsultaTabla.cs</DependentUpon>
     </EmbeddedResource>
@@ -179,6 +203,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmMeses.resx">
       <DependentUpon>frmMeses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmOperaciones.resx">
+      <DependentUpon>frmOperaciones.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmPila.resx">
       <DependentUpon>frmPila.cs</DependentUpon>

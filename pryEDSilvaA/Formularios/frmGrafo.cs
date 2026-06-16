@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -41,6 +42,52 @@ namespace pryEDSilvaA.Formularios
             grafo.MostrarTodo(dgvGrafo);
             gbListado.Text = "Listado completo de viajes";
             txtPrecioCarga.Clear();
+        }
+
+        private void cmdBorrarTodo_Click(object sender, EventArgs e)
+        {
+            grafo.BorrarTodo();
+            grafo.MostrarTodo(dgvGrafo);
+            
+            MessageBox.Show("Todos los datos fueron borrados.", "Aviso", 
+                MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void cmdConsultar_Click(object sender, EventArgs e)
+        {
+            Int32 origen = cmbOrigenConsulta.SelectedIndex;
+            Int32 destino = cmbDestinoConsulta.SelectedIndex;
+            Decimal precio = grafo.Consultar(origen, destino);
+            
+            if (precio > 0)
+                lblPrecioConsulta.Text = "$ " + precio.ToString();
+            else
+                lblPrecioConsulta.Text = "Sin conexión";
+        }
+
+        private void cmdBorrar_Click(object sender, EventArgs e)
+        {
+            Int32 origen = cmbOrigenConsulta.SelectedIndex;
+            Int32 destino = cmbDestinoConsulta.SelectedIndex;
+            
+            grafo.Eliminar(origen, destino);
+            grafo.MostrarTodo(dgvGrafo);
+            lblPrecioConsulta.Text = "Eliminado";
+        }
+
+        private void cmdListarDestinos_Click(object sender, EventArgs e)
+        {
+            grafo.MostrarDestinos(cmbOrigenListado.SelectedIndex, dgvGrafo);
+        }
+
+        private void cmdListarOrigenes_Click(object sender, EventArgs e)
+        {
+            grafo.MostrarOrigenes(cmbDestinoListado.SelectedIndex, dgvGrafo);
+        }
+
+        private void cmdVerTodos_Click(object sender, EventArgs e)
+        {
+            grafo.MostrarTodo(dgvGrafo);
         }
     }
 }

@@ -25,7 +25,8 @@ namespace pryEDSilvaA.Formularios
             cmbTabla.Items.Clear();
 
             // Carga las tablas requeridas
-            cmbTabla.Items.AddRange(new object[] { "Autor", "Idioma", "Libro", "Pais" });
+            cmbTabla.Items.AddRange(new object[] { "Autor", "Idioma", "Libro", "Pais", 
+                "Ejemplo1", "Ej-Proyeccion", "ListadoGeneral", "TituloPorAutor", "TitulosPorIdioma", "TitulosPorPais" });
 
             // Selecciona el primer elemento si existe
             if (cmbTabla.Items.Count > 0)

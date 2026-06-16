@@ -105,5 +105,23 @@ namespace pryEDSilvaA
             frmConsultaTabla x = new frmConsultaTabla();
             x.ShowDialog();
         }
+
+        private void consultaDeBaseDeDatosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmConsultaSQL x = new frmConsultaSQL();
+            x.ShowDialog();
+        }
+
+        private void operacionesEnBaseDeDatosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmOperaciones x = new frmOperaciones();
+            x.ShowDialog();
+        }
+
+        private void consultasVariasConOperacionesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmConsultasConOperaciones x = new frmConsultasConOperaciones();
+            x.ShowDialog();
+        }
     }
 }

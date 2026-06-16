@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmArbolBinario));
             this.gbListado = new System.Windows.Forms.GroupBox();
             this.optPostOrden = new System.Windows.Forms.RadioButton();
             this.optPreOrden = new System.Windows.Forms.RadioButton();
@@ -81,6 +82,7 @@
             this.optPostOrden.TabStop = true;
             this.optPostOrden.Text = "Post-Orden";
             this.optPostOrden.UseVisualStyleBackColor = true;
+            this.optPostOrden.CheckedChanged += new System.EventHandler(this.optPostOrden_CheckedChanged);
             // 
             // optPreOrden
             // 
@@ -92,6 +94,7 @@
             this.optPreOrden.TabStop = true;
             this.optPreOrden.Text = "Pre-Orden";
             this.optPreOrden.UseVisualStyleBackColor = true;
+            this.optPreOrden.CheckedChanged += new System.EventHandler(this.optPreOrden_CheckedChanged);
             // 
             // optInOrden
             // 
@@ -103,6 +106,7 @@
             this.optInOrden.TabStop = true;
             this.optInOrden.Text = "In-Orden";
             this.optInOrden.UseVisualStyleBackColor = true;
+            this.optInOrden.CheckedChanged += new System.EventHandler(this.optInOrden_CheckedChanged);
             // 
             // dgvArbolBinario
             // 
@@ -168,6 +172,7 @@
             this.cmdEliminar.TabIndex = 13;
             this.cmdEliminar.Text = "Eliminar";
             this.cmdEliminar.UseVisualStyleBackColor = true;
+            this.cmdEliminar.Click += new System.EventHandler(this.cmdEliminar_Click);
             // 
             // lblCodigo2
             // 
@@ -270,6 +275,7 @@
             this.cmdEquilibrar.TabIndex = 21;
             this.cmdEquilibrar.Text = "Equilibrar";
             this.cmdEquilibrar.UseVisualStyleBackColor = true;
+            this.cmdEquilibrar.Click += new System.EventHandler(this.cmdEquilibrar_Click);
             // 
             // pbArbolBinario
             // 
@@ -292,9 +298,11 @@
             this.Controls.Add(this.gbEE);
             this.Controls.Add(this.gbNB);
             this.Controls.Add(this.pbArbolBinario);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmArbolBinario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Estructura No Lineal - Árbol Binario";
+            this.Load += new System.EventHandler(this.frmArbolBinario_Load);
             this.gbListado.ResumeLayout(false);
             this.gbListado.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvArbolBinario)).EndInit();

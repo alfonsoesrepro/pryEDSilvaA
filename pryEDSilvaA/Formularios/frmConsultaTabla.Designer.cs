@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmConsultaTabla));
             this.dgvTabla = new System.Windows.Forms.DataGridView();
             this.cmdListar = new System.Windows.Forms.Button();
             this.cmbTabla = new System.Windows.Forms.ComboBox();
@@ -37,9 +38,12 @@
             // 
             // dgvTabla
             // 
+            this.dgvTabla.AllowUserToAddRows = false;
             this.dgvTabla.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvTabla.Location = new System.Drawing.Point(12, 12);
             this.dgvTabla.Name = "dgvTabla";
+            this.dgvTabla.ReadOnly = true;
+            this.dgvTabla.RowHeadersVisible = false;
             this.dgvTabla.Size = new System.Drawing.Size(732, 376);
             this.dgvTabla.TabIndex = 0;
             // 
@@ -81,6 +85,7 @@
             this.Controls.Add(this.cmbTabla);
             this.Controls.Add(this.cmdListar);
             this.Controls.Add(this.dgvTabla);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmConsultaTabla";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Consulta de una tabla";

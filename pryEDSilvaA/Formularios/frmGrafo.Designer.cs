@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmGrafo));
             this.cmdConsultar = new System.Windows.Forms.Button();
             this.gbListado = new System.Windows.Forms.GroupBox();
             this.cmdVerTodos = new System.Windows.Forms.Button();
@@ -75,6 +76,7 @@
             this.cmdConsultar.TabIndex = 27;
             this.cmdConsultar.Text = "Consultar";
             this.cmdConsultar.UseVisualStyleBackColor = true;
+            this.cmdConsultar.Click += new System.EventHandler(this.cmdConsultar_Click);
             // 
             // gbListado
             // 
@@ -101,6 +103,7 @@
             this.cmdVerTodos.TabIndex = 12;
             this.cmdVerTodos.Text = "Ver todos los viajes";
             this.cmdVerTodos.UseVisualStyleBackColor = true;
+            this.cmdVerTodos.Click += new System.EventHandler(this.cmdVerTodos_Click);
             // 
             // cmdListarOrigenes
             // 
@@ -110,6 +113,7 @@
             this.cmdListarOrigenes.TabIndex = 11;
             this.cmdListarOrigenes.Text = "Listar Orígenes";
             this.cmdListarOrigenes.UseVisualStyleBackColor = true;
+            this.cmdListarOrigenes.Click += new System.EventHandler(this.cmdListarOrigenes_Click);
             // 
             // cmbDestinoListado
             // 
@@ -136,6 +140,7 @@
             this.cmdListarDestinos.TabIndex = 8;
             this.cmdListarDestinos.Text = "Listar Destinos";
             this.cmdListarDestinos.UseVisualStyleBackColor = true;
+            this.cmdListarDestinos.Click += new System.EventHandler(this.cmdListarDestinos_Click);
             // 
             // cmbOrigenListado
             // 
@@ -251,6 +256,7 @@
             this.cmdBorrar.TabIndex = 13;
             this.cmdBorrar.Text = "Borrar";
             this.cmdBorrar.UseVisualStyleBackColor = true;
+            this.cmdBorrar.Click += new System.EventHandler(this.cmdBorrar_Click);
             // 
             // lblOrigen2
             // 
@@ -288,6 +294,7 @@
             this.cmdBorrarTodo.TabIndex = 17;
             this.cmdBorrarTodo.Text = "Borrar Todo";
             this.cmdBorrarTodo.UseVisualStyleBackColor = true;
+            this.cmdBorrarTodo.Click += new System.EventHandler(this.cmdBorrarTodo_Click);
             // 
             // cmbDestinoCarga
             // 
@@ -385,6 +392,7 @@
             this.Controls.Add(this.gbConsulta);
             this.Controls.Add(this.gbCarga);
             this.Controls.Add(this.pbGrafo);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmGrafo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Estructura No Lineal - Grafo";
